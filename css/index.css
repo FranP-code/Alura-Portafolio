@@ -1,5 +1,5 @@
 body > * {
-  padding: 0px 10vw;
+  padding: 10vh 10vw;
 }
 
 header {
@@ -28,4 +28,45 @@ header nav ul {
 header nav ul li {
   font-size: 16px;
   font-weight: 500;
+}
+
+main.main-content {
+  display: flex;
+}
+main.main-content .text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+main.main-content .text h5 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 61px;
+}
+main.main-content .text p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+main.main-content .text ul {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+main.main-content .text ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+main.main-content .text ul li a::after {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  content: url(../img/link.svg);
+}
+main.main-content img.face {
+  height: 23vw;
+  width: 23vw;
+  border-radius: 100%;
 }/*# sourceMappingURL=index.css.map */
