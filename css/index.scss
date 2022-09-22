@@ -1,5 +1,8 @@
 body>* {
     padding: 10vh 10vw;
+    &:nth-child(odd) {
+            background-color: #EAF2FD;
+        }
 }
 
 header {
@@ -7,6 +10,7 @@ header {
     justify-content: space-between;
     padding-top: 34px;
     padding-bottom: 34px;
+    background-color: #fff !important;
 
     .title {
         display: flex;
@@ -83,5 +87,24 @@ main.main-content {
         height: 23vw;
         width: 23vw;
         border-radius: 100%;
+    }
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    h5 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    img.sign {
+        width: 150px;
     }
 }

@@ -1,12 +1,16 @@
 body > * {
   padding: 10vh 10vw;
 }
+body > *:nth-child(odd) {
+  background-color: #EAF2FD;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   padding-top: 34px;
   padding-bottom: 34px;
+  background-color: #fff !important;
 }
 header .title {
   display: flex;
@@ -69,4 +73,21 @@ main.main-content img.face {
   height: 23vw;
   width: 23vw;
   border-radius: 100%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.about-me h5 {
+  font-size: 32px;
+  line-height: 38px;
+}
+.about-me p {
+  font-size: 16px;
+  line-height: 19px;
+}
+.about-me img.sign {
+  width: 150px;
 }/*# sourceMappingURL=index.css.map */
