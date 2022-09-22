@@ -1,0 +1,31 @@
+body > * {
+  padding: 0px 10vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+header .title {
+  display: flex;
+  align-items: center;
+}
+header .title img {
+  width: 22px;
+}
+header .title h1 {
+  margin-left: 9px;
+  font-size: 16px;
+  line-height: 19px;
+}
+header nav ul {
+  display: flex;
+  -moz-column-gap: 1.7vw;
+       column-gap: 1.7vw;
+}
+header nav ul li {
+  font-size: 16px;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */

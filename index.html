@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="shortcut icon" href="./img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="header">
-        <nav>
+        <div class="title">
+            <img src="img/icon.svg">
             <h1>Francisco Pessano</h1>
+        </div>
+        <nav>
             <ul>
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
-                <li>franpessano1@gmail.com</li>
+                <li><a href="#" alt="#">Sobre mi</a></li>
+                <li><a href="#" alt="#">Skills</a></li>
+                <li><a href="#" alt="#">Hobbies</a></li>
+                <li><a href="#" alt="#">Formación</a></li>
+                <li><a href="#" alt="#">Proyectos</a></li>
+                <li><a href="#" alt="#"><strong>franpessano1@gmail.com</strong></a></li>
             </ul>
         </nav>
     </header>
     <div class="main-content">
+        <img class="face" src="#" alt="#">
         <div class="text">
             <h5>Hola, mi nombre es Francisco Pessano y construyo paginas web</h5>
             <p>Soy formado de forma autodidacta y actualmente estoy participando del proyecto de Oracle ONE en Alura
@@ -94,12 +100,12 @@
             <h6>Description</h6>
             <div class="buttons-container">
                 <a href="#">
-                    <button>
+                    <button class="secondary">
                         Repositorio
                     </button>
                 </a>
                 <a href="#">
-                    <button>
+                    <button class="primary">
                         Demo
                     </button>
                 </a>
@@ -117,8 +123,8 @@
                 <input type="text" name="" id="">
                 <input type="text" name="" id="">
                 <input type="text" name="" id="">
-                <input type="submit" value="Enviar mensaje">
             </form>
+            <button class="primary" id="form-button">
         </div>
     </div>
     <footer>
