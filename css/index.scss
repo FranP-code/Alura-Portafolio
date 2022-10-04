@@ -215,3 +215,15 @@ main.main-content {
         }
     }
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    padding: 32px 0px;
+    text-align: center;
+
+    button {
+        width: fit-content;
+    }
+}
