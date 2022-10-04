@@ -159,4 +159,30 @@ main.main-content img.face {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+
+.contact {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.contact img {
+  width: 33.33%;
+}
+.contact .form-container {
+  width: 66.66%;
+}
+.contact .form-container h5 {
+  text-align: initial;
+  margin: 0;
+}
+.contact .form-container p {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.contact .form-container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=index.css.map */

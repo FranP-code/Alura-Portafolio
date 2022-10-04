@@ -186,3 +186,32 @@ main.main-content {
         }
     }
 }
+.contact {
+    display: flex;
+    column-gap: 16px;
+
+    img {
+        width: 33.33%;
+    }
+
+    .form-container {
+        width: 66.66%;
+
+        h5 {
+            text-align: initial;
+            margin: 0;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            margin-bottom: 32px;
+        }
+    }
+}
