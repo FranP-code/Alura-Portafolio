@@ -45,7 +45,7 @@ main.main-content .text {
   row-gap: 24px;
 }
 main.main-content .text h5 {
-  font-weight: 700;
+  text-align: initial;
   font-size: 52px;
   line-height: 61px;
 }
@@ -81,10 +81,6 @@ main.main-content img.face {
   flex-direction: column;
   row-gap: 20px;
 }
-.about-me h5 {
-  font-size: 32px;
-  line-height: 38px;
-}
 .about-me p {
   font-size: 16px;
   line-height: 19px;
@@ -95,6 +91,9 @@ main.main-content img.face {
 
 .strong-data {
   padding: 32px 10vw;
+}
+.strong-data h5 {
+  padding-bottom: 32px;
 }
 .strong-data .square-container {
   display: flex;
@@ -121,19 +120,7 @@ main.main-content img.face {
   font-family: "Raleway", "Open Sans";
   font-weight: bold;
 }
-.strong-data h5 {
-  font-size: 32px;
-  line-height: 38px;
-  text-align: center;
-  padding-bottom: 32px;
-}
 
-.education h5 {
-  font-size: 32px;
-  line-height: 38px;
-  margin-bottom: 32px;
-  text-align: center;
-}
 .education img {
   width: 26vw;
   height: 20vw;
@@ -145,12 +132,31 @@ main.main-content img.face {
   display: flex;
   justify-content: space-between;
 }
-.education .education-item h6 {
-  font-family: "Raleway", "Open Sans";
-  font-size: 22px;
-  line-height: 26px;
-}
 .education .education-item p {
   font-size: 16px;
   line-height: 19px;
+}
+
+.experience img {
+  width: 53vw;
+  height: 30vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+}
+.experience .project {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.experience .project .data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.experience .project .data .buttons-container {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }/*# sourceMappingURL=index.css.map */

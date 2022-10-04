@@ -50,7 +50,7 @@ main.main-content {
         row-gap: 24px;
 
         h5 {
-            font-weight: 700;
+            text-align: initial;
             font-size: 52px;
             line-height: 61px;
         }
@@ -95,11 +95,6 @@ main.main-content {
     flex-direction: column;
     row-gap: 20px;
 
-    h5 {
-        font-size: 32px;
-        line-height: 38px;
-    }
-
     p {
         font-size: 16px;
         line-height: 19px;
@@ -111,7 +106,10 @@ main.main-content {
 }
 .strong-data {
     padding: 32px 10vw;
-
+    
+    h5 {
+            padding-bottom: 32px;
+        }
     .square-container {
         display: flex;
         display: flex;
@@ -141,23 +139,9 @@ main.main-content {
             font-family: 'Raleway', 'Open Sans';
             font-weight: bold;
         }
-    }
-
-    h5 {
-        font-size: 32px;
-        line-height: 38px;
-        text-align: center;
-        padding-bottom: 32px;
-    }
+}
 }
 .education {
-    h5 {
-        font-size: 32px;
-        line-height: 38px;
-        margin-bottom: 32px;
-        text-align: center;
-    }
-
     img {
         width: 26vw;
         height: 20vw;
@@ -170,16 +154,35 @@ main.main-content {
         justify-content: space-between;
     }
 
-    .education-item {
-        h6 {
-            font-family: 'Raleway', 'Open Sans';
-            font-size: 22px;
-            line-height: 26px;
-        }
-
+.education-item {
         p {
             font-size: 16px;
             line-height: 19px;
+        }
+    }
+}
+.experience {
+    img {
+        width: 53vw;
+        height: 30vw;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .project {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            .buttons-container {
+                display: flex;
+                column-gap: 16px;
+            }
         }
     }
 }
