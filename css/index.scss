@@ -106,6 +106,9 @@ main.main-content {
 }
 .strong-data {
     padding: 32px 10vw;
+    display: flex;
+        flex-direction: column;
+        row-gap: 24px;
     
     h5 {
             padding-bottom: 32px;
@@ -113,12 +116,12 @@ main.main-content {
     .square-container {
         display: flex;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .square-item {
-        width: 176px;
-        height: 174px;
+        width: 10vw;
+            height: 10vw;
         background: #FFFFFF;
 
         display: flex;
