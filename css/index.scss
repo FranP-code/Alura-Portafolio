@@ -145,11 +145,19 @@ main.main-content {
 }
 }
 .education {
-    img {
+    .img-container {
         width: 26vw;
         height: 20vw;
         background-color: #fff;
-        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4px;
+        img {
+            width: 12vw;
+            height: 12vw;
+            object-fit: contain;
+        }    
     }
 
     .education-items-container {

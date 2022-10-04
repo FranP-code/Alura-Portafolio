@@ -124,10 +124,18 @@ main.main-content img.face {
   font-weight: bold;
 }
 
-.education img {
+.education .img-container {
   width: 26vw;
   height: 20vw;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.education .img-container img {
+  width: 12vw;
+  height: 12vw;
   -o-object-fit: contain;
      object-fit: contain;
 }
