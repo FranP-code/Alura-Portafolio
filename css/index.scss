@@ -150,3 +150,36 @@ main.main-content {
         padding-bottom: 32px;
     }
 }
+.education {
+    h5 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    img {
+        width: 26vw;
+        height: 20vw;
+        background-color: #fff;
+        object-fit: contain;
+    }
+
+    .education-items-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .education-item {
+        h6 {
+            font-family: 'Raleway', 'Open Sans';
+            font-size: 22px;
+            line-height: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
