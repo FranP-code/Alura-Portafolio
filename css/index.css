@@ -1,5 +1,6 @@
 body > * {
   padding: 10vh 10vw;
+  background-color: #F5F5F5;
 }
 body > *:nth-child(odd) {
   background-color: #EAF2FD;
@@ -90,4 +91,39 @@ main.main-content img.face {
 }
 .about-me img.sign {
   width: 150px;
+}
+
+.strong-data {
+  padding: 32px 10vw;
+}
+.strong-data .square-container {
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+.strong-data .square-item {
+  width: 176px;
+  height: 174px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.strong-data .square-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+  transition: 0.4s ease-in-out;
+  filter: invert(90%) sepia(6%) saturate(863%) hue-rotate(341deg) brightness(95%) contrast(88%);
+}
+.strong-data .square-item p {
+  font-family: "Raleway", "Open Sans";
+  font-weight: bold;
+}
+.strong-data h5 {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  padding-bottom: 32px;
 }/*# sourceMappingURL=index.css.map */
