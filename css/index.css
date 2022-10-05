@@ -150,7 +150,9 @@ main.main-content img.face {
 
 .experience img {
   width: 53vw;
+  max-width: 700px;
   height: 30vw;
+  max-height: 400px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 10px;

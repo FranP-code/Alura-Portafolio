@@ -1,12 +1,3 @@
-function appendElementsOnDocument(elements, selector) {
-    const parentElement = document.createDocumentFragment()
-    elements.forEach(element => {
-        console.log(element)
-        parentElement.appendChild(element)
-    });
-    document.querySelector(selector).appendChild(parentElement)
-}
-
 class strongDataElement {
     constructor(typeOfElement, imageURL, title) {
         this.typeOfElement = typeOfElement
@@ -30,7 +21,7 @@ class strongDataElement {
     }
 }
 
-const data = [
+const strongData = [
     {
     typeOfElement: "",
     imageURL: "",
@@ -101,5 +92,5 @@ const data = [
 const elements = [{type: 'skill', selector: "#skills .square-container"}, {type: "hobbie", selector: "#hobbies .square-container"}]
 
 elements.forEach(({type, selector}) => {
-    appendElementsOnDocument(data.filter(element => element.typeOfElement === type).map(({typeOfElement, imageURL, title}) => (new strongDataElement(typeOfElement, imageURL, title)).generateElement()), selector)
+    appendElementsOnDocument(strongData.filter(element => element.typeOfElement === type).map(({typeOfElement, imageURL, title}) => (new strongDataElement(typeOfElement, imageURL, title)).generateElement()), selector)
 })

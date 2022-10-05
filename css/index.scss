@@ -175,7 +175,9 @@ main.main-content {
 .experience {
     img {
         width: 53vw;
+        max-width: 700px;
         height: 30vw;
+        max-height: 400px;
         object-fit: contain;
         border-radius: 10px;
     }
