@@ -100,12 +100,15 @@ main.main-content img.face {
 }
 .strong-data .square-container {
   display: flex;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 .strong-data .square-item {
   width: 10vw;
+  min-width: 60px;
   height: 10vw;
+  min-height: 60px;
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -113,8 +116,8 @@ main.main-content img.face {
   padding: 16px;
 }
 .strong-data .square-item img {
-  width: 50px;
-  height: 50px;
+  width: 40%;
+  height: 40%;
   margin-bottom: 8px;
   transition: 0.4s ease-in-out;
   filter: invert(90%) sepia(6%) saturate(863%) hue-rotate(341deg) brightness(95%) contrast(88%);
@@ -142,6 +145,8 @@ main.main-content img.face {
 .education .education-items-container {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .education .education-item p {
   font-size: 16px;
@@ -212,4 +217,64 @@ footer button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+@media (max-width: 970px) {
+  header nav li {
+    display: none;
+  }
+  header nav li.email {
+    display: initial;
+  }
+}
+@media (max-width: 768px) {
+  .strong-data .square-container {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .strong-data .square-item {
+    min-width: 130px;
+    min-height: 130px;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .projects-container .project {
+    flex-direction: column;
+  }
+  .projects-container .project img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
+  }
+  .projects-container .project .data {
+    padding-top: 12px;
+    width: 100%;
+  }
+  .contact img {
+    display: none;
+  }
+  .contact .form-container {
+    width: 100%;
+  }
+}
+@media (max-width: 636px) {
+  .education .education-items-container {
+    flex-direction: column;
+  }
+  .education .education-items-container .education-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    padding-bottom: 6px;
+  }
+  .education .education-items-container .education-item .img-container {
+    width: auto;
+  }
+  .education .education-items-container .education-item h6, .education .education-items-container .education-item p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -107,21 +107,24 @@ main.main-content {
 .strong-data {
     padding: 32px 10vw;
     display: flex;
-        flex-direction: column;
-        row-gap: 24px;
+    flex-direction: column;
+    row-gap: 24px;
     
     h5 {
-            padding-bottom: 32px;
-        }
+        padding-bottom: 32px;
+    }
+
     .square-container {
         display: flex;
-        display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        column-gap: 5px;
     }
 
     .square-item {
         width: 10vw;
-            height: 10vw;
+        min-width: 60px;
+        height: 10vw;
+        min-height: 60px;
         background: #FFFFFF;
 
         display: flex;
@@ -131,8 +134,8 @@ main.main-content {
         padding: 16px;
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 40%;
+            height: 40%;
             margin-bottom: 8px;
             transition: 0.4s ease-in-out;
             filter: invert(90%) sepia(6%) saturate(863%) hue-rotate(341deg) brightness(95%) contrast(88%);
@@ -163,9 +166,10 @@ main.main-content {
     .education-items-container {
         display: flex;
         justify-content: space-between;
+        column-gap: 8px;
     }
 
-.education-item {
+    .education-item {
         p {
             font-size: 16px;
             line-height: 19px;
@@ -238,5 +242,78 @@ footer {
 
     button {
         width: fit-content;
+    }
+}
+
+@media (max-width: 970px) {
+    header {
+        nav {
+            li {
+                display: none;
+                &.email {
+                    display: initial;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .strong-data {
+        .square-container {
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+        .square-item {
+            min-width: 130px;
+            min-height: 130px;
+        }
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .project {
+            flex-direction: column;
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: auto;
+            }
+            .data {
+                padding-top: 12px;
+                width: 100%;
+            }
+        }
+    }
+    .contact {
+        img {
+            display: none;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 636px) {
+    .education {
+        .education-items-container {
+            flex-direction: column;
+            .education-item {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                padding-bottom: 6px;
+                .img-container {
+                    width: auto;
+                }
+                h6, p {
+                    text-align: center;
+                }
+            }
+        }
     }
 }
